@@ -1,0 +1,8 @@
+
+
+body {
+    background-color: var(--backg-color--dark);
+    color: var(--lighter-color);
+    font-family: "Satoshi", Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
