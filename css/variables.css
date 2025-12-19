@@ -1,7 +1,8 @@
 /* Palettes de couleurs */
 :root {
   --backg-color--dark: black;
-  --primary-color: #9281fe;
+  --primary-color: #a29bfe;
+  --secondary-color: #847ecf;
   --lighter-color: white;
 }
 

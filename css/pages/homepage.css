@@ -30,6 +30,7 @@
   justify-content: center;
   background-blend-mode: overlay;
   background-color: rgba(0, 0, 0, 0.2);
+  margin: 1rem 0rem;
 }
 
 header {
@@ -47,28 +48,42 @@ header {
 }
 
 /* Mise en page du main */
-/* Main > Partie services*/
-main {
+/* Application de flexbox commune */
+main,
+.services-container,
+article,
+.heros-container,
+.hero-bg-text,
+.clients-container,
+.clt {
   display: flex;
   flex-direction: column;
-  text-align: center;
+  align-items: center;
+}
+
+/* Main > Partie services */
+main {
   padding: 1rem;
+  text-align: center;
 }
 
 h2 {
   font-size: 1.5rem;
   font-weight: 900;
+  padding-bottom: 1rem;
+}
+
+button {
+  width: fit-content;
+  border-radius: 1.2rem;
+  padding: 0.5rem 1.5rem;
 }
 
 .services-container {
-  padding: 1rem 0rem;
-  display: flex;
-  flex-direction: column;
+  padding: 1rem 0rem 3rem 0rem;
   gap: 1rem;
 
   article {
-    display: flex;
-    flex-direction: column;
     justify-content: space-between;
     align-items: center;
     height: 18rem;
@@ -84,10 +99,6 @@ h2 {
     text-transform: uppercase;
   }
 
-  button {
-    width: fit-content;
-  }
-
   p {
     font-style: italic;
     font-size: 0.8rem;
@@ -100,42 +111,119 @@ h2 {
   border: solid 0.5px var(--primary-color);
 }
 
-/* Main > Partie Heros*/
+/* Main > Partie Heros */
 .heros-container {
   padding: 1rem 0rem;
-  display: flex;
-  flex-direction: column;
   gap: 1rem;
 
   article {
-    display: flex;
-    flex-direction: column;
     justify-content: flex-end;
-    align-items: center;
     height: 15rem;
   }
 
   .hero-bg-text {
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(0, 0, 0, 0.3);
     height: 50%;
+    width: 100%;
     border-radius: 0rem 0rem 1rem 1rem;
-    display: flex;
-    flex-direction: column;
     justify-content: center;
   }
 
+  .cat-card {
+    background-image: url(../../assets/images/catastrophic.png);
+  }
+
+  .carotte-card {
+    background-image: url(../../assets/images/carotte-woman.png);
+  }
+
+  .ultra-card {
+    background-image: url(../../assets/images/ultraquenarde.png);
+  }
+
+  .poulpy-card {
+    background-image: url(../../assets/images/poulpy.png);
+  }
+
+  .orang-card {
+    background-image: url(../../assets/images/oran-wu-tang-clan.png);
+  }
+  .superime-card {
+    background-image: url(../../assets/images/superime.png);
+  }
+
   h3 {
+    font-weight: 900;
+    font-size: 1.4rem;
   }
 
   h4 {
-  }
-
-  p {
+    font-weight: 400;
   }
 }
 
 .hero {
   padding: 0rem;
+  width: 100%;
   border-radius: 1rem;
-  border: solid 2px red;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.all-heros-cards {
+  margin: 1rem 0rem 3rem 0rem;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+/* Main > Temoignages clients */
+
+.clients-container {
+  gap: 1rem;
+}
+
+.clt {
+  background-color: var(--secondary-color);
+  justify-content: space-between;
+  border-radius: 1rem;
+
+  h4,
+  p {
+    padding: 1rem;
+  }
+
+  h4 {
+    padding-top: 2rem;
+    padding-bottom: 0rem;
+    font-weight: 900;
+    font-size: 1.2rem;
+  }
+
+  p {
+    font-style: italic;
+  }
+}
+
+.clt-image {
+  border: 0.5rem solid var(--primary-color);
+  height: 21rem;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 1rem 1rem 15rem 15rem;
+}
+.tomb-card {
+  background-image: url(../../assets/images/testimony-1.png);
+}
+
+.jella-card {
+  background-image: url(../../assets/images/testimony-2.png);
+}
+
+.bob-card {
+  background-image: url(../../assets/images/testimony-3.png);
+}
+
+.coup-card {
+  background-image: url(../../assets/images/testimony-4.png);
 }
