@@ -3,7 +3,7 @@
 Front-end integration challenge – HTML & CSS
 
 ## 🚀 Live Demo
-👉 [https://accolette.github.io/challenge-FrontEnd-heros-league/](https://accolette.github.io/challenge-FrontEnd-heros-league/)
+👉 [https://accolette.github.io/challenge-Semaine4-FrontEnd-heros-league/](https://accolette.github.io/challenge-Semaine4-FrontEnd-heros-league/)
 
 ---
 
